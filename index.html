@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Bootstrap and me">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Accessolotl</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Joti+One">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Joan">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter+One">
+<!--      for github linkedin etc icons -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+      <script src="https://kit.fontawesome.com/188a1ecbd0.js" crossorigin="anonymous" async></script>
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <!--  nav bar  -->
+  <!-- <img src="..." class="d-block w-100" style="height: 800px" /> -->
+    <div style="overflow: hidden">
+      <!-- Bootstrap Navbar: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+      <nav class="navbar navbar-expand-lg mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-text" href="#" style="margin-left: 5%">Accessolotl's Portfolio</a>
+          <button
+            class="navbar-toggler navbar-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end navbar-text bitter" id="menu">
+            <ul class="navbar-nav mb-4 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#AboutMe">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#WorkExperience">Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#Work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text active" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <!-- <nav class="navbar navbar-expand-sm navbar-light bg-white">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">UIUX Portfolio</a>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="#objective">About me</a></li>
+				{/* <li class="nav-item"><a class="nav-link" href="#interface">Work Experience</a></li> */}
+				<li class="nav-item"><a class="nav-link" href="#interviews">Design Projects</a></li>
+			</ul>
+		</div>
+	</div>
+  </nav> -->
+  <!-- <nav class="navbar sticky-top navbar-light bg-white">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="assets/brand/brand_jz2.png" width="80vw" height="100%" alt="" title="">
+          </a>
+          <div class="justify-content-end">
+              <a class="navbar-brand " href="index.html">Work</a>
+              <a class="navbar-brand text-secondary" href="play.html">Play</a>
+              <a class="navbar-brand text-secondary" href="about.html">About</a>
+              <a class="navbar-brand text-secondary" href="" target="_blank">Resume</a>
+          </div>
+      </div>
+  </nav> -->
+  <!--    end nav bar  -->
+
+<div class="container">
+
+<!--    start self introduction -->
+    <h1 class="pt-5 blog-post-title text-start">Hi, I'm Accessolotl!</h1>
+    <div class="row">
+        <div class="col-sm">
+            <br>
+            <p class="self-intro1"> I'm an Axolotl who miraculously learned to code and plans to take over the world 
+              with the powers of accessibility!
+            </p>
+
+            <div class="d-flex">
+                <a class="smsetting far fa-file-alt fa-lg pb-2 text-decoration-none text-dark" href="" target="_blank" > /</a>
+                <a class="smsetting fab fa-linkedin-in fa-lg pb-2 text-decoration-none text-dark" href="" target="_blank" > /</a>
+                <a class="smsetting fab fa-github fa-lg pb-2 text-decoration-none text-dark" title="GitHub" href="" target="_blank" > </a>
+            </div>
+        </div>
+        <div class="col-sm">
+            <img src="axolotlimg.jpg" width="100%">
+        </div>
+    </div>
+<!--    end self introduction-->
+
+<!--    start Selected work-->
+    <h3 class="my-5 section-title">Current Projects 💙</h3>
+    <div class="row justify-content-around">
+      <div class="col-md-6">
+          <div class="card selected-card elephant-card justify-content-center border-0" >
+              <img src="RISD-error.png" class="card-img-top selected-img" alt="A screenshot of the VSCode a11y-buddy finding an accessibility error">
+              <div class="card-body text-center" >
+                  <h2 class="mb-0">A11y-Buddy Website Accessibility VS Code Extension</h2>
+                  <p class="pt-1">An adorable virtual pet to help catch pesky website accessibility errors while you code!</p>
+                  <a href="IterativeDesign/a11y.html" class="text-secondary stretched-link text-decoration-none">Keywords: Accessibility, Prototyping, User Testing</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card selected-card pika-card justify-content-center border-0" >
+              <img src="Nasa.png" class="card-img-top selected-img" alt="A screenshot of a Nasa research presentation">
+              <div class="card-body text-center" >
+                  <h2 class="mb-0">Nasa Image Accessibility Using Haptics and AI</h2>
+                  <p class="pt-1">Building access to the stars!</p>
+                  <a href="https://docs.google.com/presentation/d/1dbsaj_Jlly_s64WN2dmBP22ifTic_5wwqQay5VB6hRI/edit?usp=sharing" class="text-secondary stretched-link text-decoration-none">Keywords: Accessibility, AI, React Native, Haptics</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <h3 class="my-5 section-title">Past Projects 💙</h3>
+    <div class="row justify-content-around">
+      <div class="col-md-6">
+          <div class="card selected-card toko-card justify-content-center border-0" >
+              <img src="wren.png" class="card-img-top selected-img" alt="A screenshot of a persona diagram">
+              <div class="card-body text-center" >
+                  <h2 class="mb-0">Boba Ordering Station Storyboarding and Accessibility</h2>
+                  <p class="pt-1">Accessibility analysis and storyboarding for a boba ordering station. </p>
+                  <a href="IterativeDesign/personas.html" class="text-secondary stretched-link text-decoration-none">Keywords: Ideation, Prototyping, User Testing</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card selected-card yakima-card justify-content-center border-0" >
+              <img src="IterativeDesign/img/highfi_first_draft.png" class="card-img-top selected-img" alt="Hifi prototypes of a fashion rental service app">
+              <div class="card-body text-center" >
+                  <h2 class="mb-0">Fashion Rental Service App</h2>
+                  <p class="pt-1">Designed a fashion rental brand's mobile app</p>
+                  <a href="IterativeDesign/index.html" class="text-secondary stretched-link text-decoration-none">Keywords: User Flows, Problem-Solving, Prototyping</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row justify-content-around">
+    <div class="col-md-6">
+        <div class="card selected-card justify-content-center border-0" >
+            <img src="bakery.png" class="card-img-top selected-img" alt="A cartoonish bakery website screenshot">
+            <div class="card-body text-center" >
+              <h2 class="mb-0">Scripts' Scones and Java</h2>
+              <p class="pt-1">Learned React through designing and building a cartoony bakery website</p>
+                <a href="https://angryisopod777.github.io/react-studio/" class="text-secondary stretched-link text-decoration-none">Keywords: React, Sorting and Filtering, Adorable Human Food</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<!-- footer start -->
+<footer class="blog-footer mt-5">
+    <div class="container">
+        
+        <p class="mt-5 pt-2 comicsans text-start">Ⓒ Made with love by Accessolotl</p>
+    </div>
+</footer>
+
+  </body>
+</html>
