@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" spellcheck="true">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>A11y-Buddy VS Code Extension</title>
+
+    <!-- CSS / Bootstrap. Using 5.0 but referenced 4.0 guide throughout with some minor changes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/cs1300.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div style="overflow: hidden">
+      <!-- Bootstrap Navbar: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html" style="margin-left: 5%">Portfolio Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="navbar-nav mb-4 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" aria-disabled="true">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#startup">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#sketches">Ideation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#mockups">User Flow</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#accessolotl">Prototype</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Iterative Design assignment -->
+    <section id="startup">
+      <div class="container content-section">
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <h1 class="assignment-title">A11y-Buddy: Your helpful web accessibility VS Code buddy!</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Mission Objective</h2>
+            </div>
+          </div>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link text-center">
+                <p>
+                  Since Accessolotls want to take over the world using accessibility,
+                  they naturally want to enable developers to make their websites accessible!
+                  What's a better way to motivate people to do something than cute virtual pets? So the 
+                  Accessolotls set out to create a helpful a11y buddy to help developers fix accessibility errors
+                  while they create their websites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sketches">
+      <br />
+      <div class="container content-section">
+        <div id="sketch-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Ideation</h2>
+            </div>
+          </div>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <h3>Goal: Brainstorm mechanisms to encourage and aid in developing accessible websites.</h3>
+                <p>The Accessolotls spent a long time ideating on how to structure the user experience to encourage accessibility best practices. Their main ideas are outlined as follows:</p>
+              </div>
+            </div>
+        <div class="row justify-content-around">
+          <div class="col-md-6">
+              <div class="card selected-card justify-content-center border-0" >
+                  <img src="../Ideas.png" class="card-img-top selected-img" alt="Idea notes">
+                  <div class="card-body text-center" >
+                      <p>Ideas on how to design the game experience including creating a tomagochi like pet with health and a rewards system,
+                        and showing users which line(s) the errors are located on.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <div class="row justify-content-around">
+        <div class="col-md-6">
+            <div class="card selected-card elephant-card justify-content-center border-0" >
+                <img src="../game-resources.png" class="card-img-top selected-img" alt="Games used as inspiration">
+                <div class="card-body text-center" >
+                  <p>Games used as inspiration including Forest, a study timer app where you plant trees as you study, and 
+                    Habitica, which rewards you for completing habits with new armor for your character.
+                  <p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card selected-card pika-card justify-content-center border-0" >
+                <img src="../extension-resources.png" class="card-img-top selected-img" alt="Extensions used as inspiration">
+                <div class="card-body text-center" >
+                    <p>VS Code extensions used as inspiration including VSCode Pets, a virtual pet for your coding environment, and eslint, an accessibility checker.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+      </div>
+      <div class="container content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Conducting Developer Interviews on Website Accessibility</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>
+                  The observations below were gathered from interviewing software developers on their implementation of and familiarity with website accessibility.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-md-6">
+                  <div class="card selected-card justify-content-center border-0" >
+                      <img src="../interviews.png" class="card-img-top selected-img" alt="Interview notes with developers">
+                      <div class="card-body text-center" >
+                          <h2 class="mb-0">Observations</h2>
+                          <p>It is evident from the interviews that developers consider accessibility to be an afterthought and get overwhelmed by too many warnings at once using current accessibility checking extensions.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 inline-link">
+              <p>
+                The Accessolotls were also fortunate enough to be able to gather feedback on their game idea from different classes at Brown University. That feedback is recorded below.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-md-12">
+                <div class="card selected-card justify-content-center border-0" >
+                    <img src="../feedback.png" class="card-img-top selected-img" alt="Feedback notes on the proposed ideas.">
+                    <div class="card-body text-center" >
+                      <h2 class="mb-0">Takeaways</h2>
+                        <p>Feedback on the proposed ideas. This feedback indicated that people want a visual game with a strong emotional response. This feedback also prompted critical thought on how the extension would put the visual and technical error detection and fixing elements together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mockups">
+      <br />
+      <div class="container content-section">
+        <div id="sketch-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">User Flow</h2>
+            </div>
+          </div>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>Below is the created user flow from reviewing the feedback provided from talking to Brown University students and developers.
+              </div>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-md-16">
+                  <div class="card selected-card justify-content-center border-0" >
+                      <img src="../Userflow.png" class="card-img-top selected-img" alt="User flow diagram">
+                      <div class="card-body" >
+                        <h2>User flow summary</h2>
+                        <p class="lead">
+                          <ol>
+                            <li> The extension determines the file type of the current open file, and if it is an html file, it generates a random egg and runs an accessibility check. If it is not an html file, it will give you a warning that it cannot run.
+                            </li>
+                          <li>If there are no errors, the pet's evolution bar will increase and it will say "Huzzah!". If there are errors, the pet will tell you there's at least one error. Then you can click the arrows on the extension to have each highlighted and described one at a time.</li>
+                          <li>Every time you open a new file or save, the accessibility tests are run. If there are no errors, your creature will grow. If there are errors, it will stop growing and look sad.
+                          </li>
+                        </ol>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+
+          <!-- <div id="sketch-img" class="text-center mx-auto" style="width: 50%">
+            <br />
+            <img class="sketch-img rounded mb-5 w-100" src="img/sketch_1.jpg" alt="Sketch 1" />
+            <br />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="accessolotl">
+      <br />
+      <div class="container content-section">
+        <div id="sketch-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Final Working Prototype</h2>
+            </div>
+          </div>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>Below are images of the final working prototype when there is and isn't currently an error.</p>
+              </div>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-md-12">
+                  <div class="card selected-card justify-content-center border-0" >
+                      <img src="../RISD-error.png" class="card-img-top selected-img" alt="VS Code a11y buddy when there is an accessibility error (looking sad)">
+                      <div class="card-body text-center" >
+                      <p>The image shows what happens when an image is missing alt text. The pet looks sad and once you hit the forward or backward arrow, the either first or last error will be highlighted and described.</p>
+                      </div>
+                      <!-- <div class="card-body" >
+                        <h2>Persona 1: Annika</h2>
+                        <p class="lead">
+                          <ul>
+                            <li> Annika is a college student who routinely gets boba with her friends to treat herself after a stressful day of studying.
+                            </li>
+                          <li>Annika has trouble finding her usual drink as the categories and drink organization doesn't make sense to her.</li>
+                          <li>She experiences the stress and confusion of trying to find her go-to drink among all of the different drinks and categories,
+                            representing the overworked college students who regularly get boba.
+                          </li>
+                          </ul>
+                      </div> -->
+                  </div>
+              </div>
+          </div>
+          <br> </br>
+          <br> </br>
+          <div class="row justify-content-around">
+            <div class="col-md-12">
+                <div class="card selected-card justify-content-center border-0" >
+                    <img src="../success-pet.png" class="card-img-top selected-img" alt="VSCode a11y-buddy on the VS Code screen showing a Huzzah message showing that there are no errors.">
+                    <div class="card-body text-center" >
+                      <p>The image shows what happens when there are no errors. The buddy keeps growing and displays a Huzzah! message.</p>
+                      </div>
+                    <!-- <div class="card-body" >
+                      <h2>Persona 2: Wren</h2>
+                      <p class="lead">
+                        <ul>
+                        <li>Wren has never gotten Boba before but wanted to try it as a special treat with her partner and kids after a long week of work.
+                        </li>
+                      <li>Due to the lack drink details, she has no idea what drink she would like. She is further stressed by the lack of
+                        instructions on how to customize her drink, and ultimately ends up getting something random.</li>
+                      <li>She experiences the overwelmth and confusion with learning the new interface in the 
+                        high pressure atmosphere surrounded by her kids and other customers, representing the families who want to
+                        order Boba contactlessly.
+                      </li>
+                      </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+          <!-- <div id="sketch-img" class="text-center mx-auto" style="width: 50%">
+            <br />
+            <img class="sketch-img rounded mb-5 w-100" src="img/sketch_1.jpg" alt="Sketch 1" />
+            <br />
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section id="Accessolotl">
+      <div class="container content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Accessolotl Analysis</h2>
+            </div>
+          </div>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link text-center">
+                <p>
+                  An accessibility analysis of the created extension was conducted in order to determine how usable it was to beings with
+                  disabilities. Everyone deserves to Access-o-lotl!
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="question-box-opaque">
+                <ul class="col-12">
+                  <div class="container">
+                    <li>VS Code does not allow audio in extension webview panels, so efforts were made to include an engaging story in the alt text. However, future research must be done on the best ways to non-visually access a visual a11y-buddy pet.</li>
+                    <li>
+                      The error buttons staying on-screen when there are no errors could be confusing, so in the future these will be removed when there are no errors.
+                    </li>
+                    <li>There is only a hover icon available to use to read instructions on how to use the extension, so in the future there will be a fully accessible instructions screen that does not require hovering a mouse.</li>
+                    <li>
+                      There are only very brief descriptions of how to fix the encountered errors in the given warnings, so these will be expanded in the future to enable people who are completely new to the world of accessibility to benefit from this tool.
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Conclusion">
+      <div class="container content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Mission Conclusions</h2>
+            </div>
+          </div>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link text-center">
+                <p>
+                  After successfully creating a working prototype of a virtual pet to aid in accessible website development, the Accessolotls learned that there are still many more ways the extension itself can be more accessible, and they are excited to continue working on this project and get it published to the extension market place.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+</html>
